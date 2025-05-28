@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Nav</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        </label>
+        <a href="home.html">
+            <img class="logo" src="logo2.png" alt="logoimage">
+        </a>
+        <div class="navbar">
+        <ul>
+          <li><a href="guide.html">Connect</a></li>
+          <li><a href="connectpage.html">Import Map</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li><a href="guide.html">User Guide</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="section8">
+    <div class="part1">
+    <div class="section1">
+        <div class="user-guidepart">
+            <h class="librarymap">Import Library Map</h>
+        </div>
+    </div>
+    <div class="part4">
+      <p class="banner1"><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+      <p class="banner2"><label for="file" style="cursor: pointer;">Upload Image</label></p>
+      <p class="banner1"><img id="output" width="500" /></p>
+      <script class="section6">
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+      </script>
+    </div>
+    </div>
+    <footer class="footer">
+        <div>
+          <h2 class="footer-text">Links to our social medias</h2>
+          <ul>
+            <li><a href="contact.html">Instagram</a></li>
+            <li><a href="referencepage.html">Facebook</a></li>
+            <li><a href="referencepage.html">Snapchat</a></li>
+          </ul>
+        </div>
+    </footer> 

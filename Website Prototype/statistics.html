@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Nav</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        </label>
+        <a href="home.html">
+            <img class="logo" src="logo2.png" alt="logoimage">
+        </a>
+        <div class="navbar">
+        <ul>
+          <li><a href="home.html">Connect</a></li>
+          <li><a href="guide.html">Import Map</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li><a href="guide.html">User Guide</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="section8">
+    <div class="section-4">
+        <div class="section4-1">
+            <h class="map-heading">The Map</h>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2429.6752601712064!2d-1.8867919229904728!3d52.48501523881864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDI5JzA2LjAiTiAxwrA1MycwMy4yIlc!5e0!3m2!1sen!2suk!4v1715861404187!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+            <body>
+            <p>The statistics</p>
+            <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+            
+            <script>
+            const xValues = ["Monday","Tuesday","Wednesday","Thursday", "Friday"];
+            const yValues = [20, 60, 89,100,39,70];
+            const barColors = ["blue","pink","#00aba9","purple", "red"];
+            
+            new Chart("myChart", {
+              type: "bar",
+              data: {
+                labels: xValues,
+                datasets: [{
+                  backgroundColor: barColors,
+                  data: yValues
+                }]
+              },
+              options: {
+                legend: {display: false},
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero: true
+                    }
+                  }],
+                }
+              }
+            });
+            </script>
+        </div>
+        <div class="section4-subpart1">
+            <p>Today's completed jobs</p>
+            <p class="zone">Floor 1</p>
+            <div class="connect">
+            <div class="subpart">
+            <p>Books received:</p>
+            <p>Books returned:</p>
+            <p>Students guided:</p>
+            </div>
+            <div class="empty">
+                <p id="demo"></p>
+
+                <script>
+                let x = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo").innerHTML = x;
+                </script>
+                <p id="demo1"></p>
+                <script>
+                let y = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo1").innerHTML = y;
+                </script>
+                <p id="demo2"></p>
+                <script>
+                let z = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo2").innerHTML = z;
+                </script>
+            </div>
+            </div>
+            <p class="zone">Floor 2</p>
+            <div class="connect">
+            <div class="subpart">
+                <p>Books received:</p>
+                <p>Books returned:</p>
+                <p>Students guided:</p>
+            </div>
+            <div class="empty">
+                <p id="demo3"></p>
+
+                <script>
+                let a = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo3").innerHTML = a;
+                </script>
+                <p id="demo4"></p>
+                <script>
+                let b = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo4").innerHTML = b;
+                </script>
+                <p id="demo5"></p>
+                <script>
+                let c = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo5").innerHTML = c;
+                </script>
+            </div>
+            </div>
+            <p class="zone">Floor 3</p>
+            <div class="connect">
+            <div class="subpart">
+                <p>Books received:5</p>
+                <p>Books returned:5</p>
+                <p>Students guided:1</p>
+            </div>
+            <div class="empty">
+                <p id="demo6"></p>
+
+                <script>
+                let d = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo6").innerHTML = d;
+                </script>
+                <p id="demo7"></p>
+                <script>
+                let e = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo7").innerHTML = e;
+                </script>
+                <p id="demo8"></p>
+                <script>
+                let f = Math.floor((Math.random() * 10) + 1);
+                document.getElementById("demo8").innerHTML = f;
+                </script>
+            </div>
+        </div>
+        </div>
+        <div class="part1">
+        <p class="zone">Noise Levels</p>
+        <p class="zone">Floor 1</p>
+        <div class="connect2">
+            <div class="subpart">
+                <p>Quiet zone:</p>
+                <p>Silent zone:</p>
+    
+            </div>
+            <div class="empty2">
+                <p id="randomWord"></p>
+            
+            <script>
+            const myList = ["below expected", "higher than usual", "regular noise level"];
+            
+            randomizeFunction()
+            
+            function randomizeFunction() {
+                document.getElementById("randomWord").innerHTML = myList[Math.floor(Math.random() * myList.length)]
+            }
+            </script>
+            <p id="randomWord2"></p>
+        
+            <script>
+            const myList2 = ["below expected", "higher than usual", "regular noise level"];
+            
+            randomizeFunction()
+            
+            function randomizeFunction() {
+                document.getElementById("randomWord2").innerHTML = myList[Math.floor(Math.random() * myList2.length)]
+            }
+            </script>
+            </div>
+            </div>
+            <p>Floor 2</p>
+            <div class="connect2">
+            <div class="subpart">
+                <p>Quiet zone: </p>
+                <p>Silent zone: </p>
+            </div>
+            <div class="part5">
+            <p id="randomWord3"></p>
+        
+            <script>
+            const myList3 = ["below expected", "higher than usual", "regular noise level"];
+            
+            randomizeFunction()
+            
+            function randomizeFunction() {
+                document.getElementById("randomWord3").innerHTML = myList3[Math.floor(Math.random() * myList3.length)]
+            }
+            </script>
+            <p id="randomWord4"></p>
+
+            <script>
+            const myList4 = ["below expected", "higher than usual", "regular noise level"];
+            
+            randomizeFunction()
+            
+            function randomizeFunction() {
+                document.getElementById("randomWord4").innerHTML = myList4[Math.floor(Math.random() * myList4.length)]
+            }
+            </script>
+            </div>
+            </div>
+            <p class="zone">Floor 3</p>
+            <div class="connect2">
+            <div class="subpart">
+                <p>Quiet zone:</p>
+                <p>Silent zone:</p>
+            </div>
+            <div class="part5">
+                <p id="randomWord5"></p>
+            
+                <script>
+                const myList5 = ["below expected", "higher than usual", "regular noise level"];
+                
+                randomizeFunction()
+                
+                function randomizeFunction() {
+                    document.getElementById("randomWord5").innerHTML = myList5[Math.floor(Math.random() * myList5.length)]
+                }
+                </script>
+                <p id="randomWord6"></p>
+    
+                <script>
+                const myList6 = ["below expected", "higher than usual", "regular noise level"];
+                
+                randomizeFunction()
+                
+                function randomizeFunction() {
+                    document.getElementById("randomWord6").innerHTML = myList6[Math.floor(Math.random() * myList6.length)]
+                }
+                </script>
+                </div>
+            </div>
+        </div>
+        </div>
+    <footer class="footer">
+        <div>
+          <h2 class="footer-text">Links to our social medias</h2>
+          <ul>
+            <li><a href="contact.html">Instagram</a></li>
+            <li><a href="referencepage.html">Facebook</a></li>
+            <li><a href="referencepage.html">Snapchat</a></li>
+          </ul>
+        </div>
+    </footer> 
+    

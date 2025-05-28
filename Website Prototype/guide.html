@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Responsive Nav</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <nav>
+        </label>
+        <a href="home.html">
+            <img class="logo" src="logo2.png" alt="logoimage">
+        </a>
+        <div class="navbar">
+        <ul>
+          <li><a href="home.html">Connect</a></li>
+          <li><a href="guide.html">Import Map</a></li>
+          <li><a href="statistics.html">Statistics</a></li>
+          <li><a href="referencepage.html">User Guide</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="section2">
+        <div class="rectangle">
+        <p class="rectangle">rectangle</p>
+        </div>
+        <div>
+        <h class="title1">The BookBot Guide</h>
+        <p class="large-text">It is a long established fact that a reader will be distracted by the 
+            readable content of a page when looking at its layout. The point of using
+            Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+            as opposed to using 'Content here, content here', making it look like
+            readable English.
+            
+            Many desktop publishing packages and web page editors now use
+            Lorem Ipsum as their default model text, and a searchfor 'lorem ipsum'
+            will uncover many web sites still in their infancy.
+            
+            Various versions have evolved over the years, sometimes by accident,
+            sometimes on purpose (injected humour and the like).</p>
+          </div>
+    </div>
+    <div class="section3">
+        <div class="rectangle">
+        <img src="robotimage1.jpeg">
+        </div>
+        <p class="large-text">BookBot will help our target audience by assisting them to complete specific problems, such as tasks like placing books on shelves where they belong; giving students a verbal warning if the noise level exceeds its set limit for the area; guiding students to their destination of where a certain book may be. By completing these tasks, this will ensure a smoother process for both librarians and those who use the library.  </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+const xValues = ["Floor1","Floor2","Floor3"];
+const yValues = [20, 60, 45];
+const barColors = ["blue"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }],
+    }
+  }
+});
+</script>
+    <footer class="footer">
+        <div>
+          <h2 class="footer-text">Links to our social medias</h2>
+          <ul>
+            <li><a href="contact.html">Instagram</a></li>
+            <li><a href="referencepage.html">Facebook</a></li>
+            <li><a href="referencepage.html">Snapchat</a></li>
+          </ul>
+        </div>
+    </footer> 
